@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    Name:<input name="name" type="text" placeholder="Name" required>
+    Email:<input name="Email" type="email" placeholder="Email" required>
+    Comments:<input name="comment" type="text" placeholder="Comment" required>
+    <button type="submit"><a href="http://127.0.0.1:8000/mail/display"> Post</a></button>
+
+</form>
+</body>
+</html>
