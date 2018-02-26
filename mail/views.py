@@ -19,7 +19,7 @@ def send(request):
         mail = smtplib.SMTP('smtp.gmail.com', 587)
         mail.ehlo()
         mail.starttls()
-        mail.login('sarvanimini@gmail.com','mini@241098')
+        mail.login('sarvanimini@gmail.com','******')
         mail.sendmail('sarvanimini@gmail.com','maddaladivya3212@gmail.com',comment)
         mail.close()
         temp1 = 'mail/mail.html'
